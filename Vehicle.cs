@@ -7,8 +7,9 @@ public class Vehicle
     public bool IsActive;
     public DateTime LastServiceDate;
     public DateTime NextServiceDate;
+    public string Driver;
 
-    public Vehicle(string regNumber, string mfDate, string vt, DateTime insRenDate, DateTime serviceDate)
+    public Vehicle(string regNumber, string mfDate, string vt, DateTime insRenDate, DateTime serviceDate, string driverName)
     {
         this.RegistrationNumber = regNumber; 
         this.ManufacturedDate = mfDate;
@@ -16,6 +17,7 @@ public class Vehicle
         this.InsuranceRenewalDate = insRenDate;
         this.IsActive = true;
         this.NextServiceDate = serviceDate;
+        this.Driver = driverName;
     }
 
     public void UpdateService(DateTime finishedServiceDate, DateTime nextServiceDate)
