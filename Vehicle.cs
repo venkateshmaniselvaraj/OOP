@@ -8,7 +8,7 @@ public class Vehicle
 
     public Vehicle(string regNumber, string mfDate, string vt, string insRenDate)
     {
-        this.RegistrationNumber = regNumber;
+        this.RegistrationNumber = regNumber; 
         this.ManufacturedDate = mfDate;
         this.VehicleType = vt;
         this.InsuranceRenewalDate = insRenDate;
