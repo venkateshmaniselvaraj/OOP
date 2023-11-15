@@ -1,6 +1,6 @@
-public class Vehicle
+public abstract class Vehicle
 {
-    public string RegistrationNumber;
+    protected string RegistrationNumber;
     public string ManufacturedDate;
     public string VehicleType;
     public DateTime InsuranceRenewalDate;
