@@ -33,4 +33,9 @@ public abstract class Vehicle
         return NextServiceDate;
     }
 
+    public virtual int CalculateDistanceItCanTravel(int fuelInLitres)
+    {
+          return  -1; //Assume 10km/litre 
+    }
+
 }

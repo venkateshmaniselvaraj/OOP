@@ -1,4 +1,4 @@
-public class HeavyMotorVehicle : Vehicle
+public abstract class HeavyMotorVehicle : Vehicle
 {
     public string Cleaner;
 
@@ -6,8 +6,13 @@ public class HeavyMotorVehicle : Vehicle
          : base(regNumber, mfDate, vt, insRenDate, serviceDate, driverName)
      {
           Cleaner = cleanerName;
-        
+    
        
      
      }
+
+    public override int CalculateDistanceItCanTravel(int fuelInLitres)
+    {
+        return fuelInLitres * 8;
+    }
 }
